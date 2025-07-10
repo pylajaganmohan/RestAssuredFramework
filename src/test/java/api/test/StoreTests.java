@@ -1,6 +1,7 @@
 package api.test;
 
 import org.joda.time.Instant;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -41,18 +42,21 @@ public class StoreTests {
 		Response response = StoreEndPoints.creatOrder(payload);
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(), 200);
+		
+		long createdId = response.jsonPath().getLong("id");
+		payload.setId(createdId);
 	}
 	
 	@Test(priority=3)
 	public void testGetOrder() {
-		Response response = StoreEndPoints.getOrder(this.payload.getId());
+		Response response = StoreEndPoints.getOrder(payload.getId());
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(), 200);
 	}
 	
 	@Test(priority=4)
 	public void testDeleteOrder() {
-		Response response = StoreEndPoints.deleteOrder(this.payload.getId());
+		Response response = StoreEndPoints.deleteOrder(payload.getId());
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(), 200);
 	}

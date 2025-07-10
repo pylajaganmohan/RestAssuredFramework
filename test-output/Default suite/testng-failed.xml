@@ -5,8 +5,8 @@
     <classes>
       <class name="api.test.StoreTests">
         <methods>
+          <include name="testGetOrder"/>
           <include name="setUpData"/>
-          <include name="testGetInventory"/>
           <include name="testDeleteOrder"/>
         </methods>
       </class> <!-- api.test.StoreTests -->

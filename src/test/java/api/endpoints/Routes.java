@@ -26,4 +26,10 @@ public class Routes {
 	public static String store_createOrderUrl =base_url+"/store/order";
 	public static String store_getOrderUrl =base_url+"/store/order/{orderId}";
 	public static String store_deleteOrderUrl =base_url+"/store/order/{orderId}";
+	
+	//GoRest API
+	public static String gorest_createUrl = "https://gorest.co.in/public/v2/users";
+	public static String gorest_getUrl = "https://gorest.co.in/public/v2/users/{userid}";
+	public static String gorest_updateUrl = "https://gorest.co.in/public/v2/users/{userid}";
+	public static String gorest_deleteUrl = "https://gorest.co.in/public/v2/users/{userid}";
 }
