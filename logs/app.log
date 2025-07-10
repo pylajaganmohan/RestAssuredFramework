@@ -18,3 +18,9 @@
 2025-07-09 14:02:35 [main] INFO  api.test.UserTests2 - *********updating User**********
 2025-07-09 14:02:39 [main] INFO  api.test.UserTests2 - *********Deleting User**********
 2025-07-09 14:02:40 [main] INFO  api.test.UserTests2 - *********User Deleted**********
+2025-07-10 01:48:37 [main] INFO  api.test.UserTests - *********Creating User**********
+2025-07-10 01:48:38 [main] INFO  api.test.UserTests - ********* User Created **********
+2025-07-10 01:48:38 [main] INFO  api.test.UserTests - *********Retriving User details**********
+2025-07-10 01:48:39 [main] INFO  api.test.UserTests - *********updating User**********
+2025-07-10 01:48:42 [main] INFO  api.test.UserTests - *********User Updated**********
+2025-07-10 01:48:42 [main] INFO  api.test.UserTests - *********Deleting User**********
