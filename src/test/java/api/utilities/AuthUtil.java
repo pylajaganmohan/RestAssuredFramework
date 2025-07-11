@@ -13,7 +13,6 @@ public class AuthUtil {
 	public static RequestSpecification getAuthSpec() {
 		RequestSpecification reqSpec = new RequestSpecBuilder()
 					.addHeader("Authorizathion", getToken())
-					.setContentType(ContentType.JSON)
 					.build();
 
 		return reqSpec;
