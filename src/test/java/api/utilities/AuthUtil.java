@@ -1,6 +1,7 @@
 package api.utilities;
 
 import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 
 public class AuthUtil {
@@ -12,6 +13,7 @@ public class AuthUtil {
 	public static RequestSpecification getAuthSpec() {
 		RequestSpecification reqSpec = new RequestSpecBuilder()
 					.addHeader("Authorizathion", getToken())
+					.setContentType(ContentType.JSON)
 					.build();
 
 		return reqSpec;
